@@ -2,33 +2,33 @@ const input = document.querySelector("#inputYear")
 const btnCheck = document.querySelector("#check");
 const outputBox = document.querySelector("#output");
 
-console.log(input, btnCheck, outputBox);
+// console.log(input, btnCheck, outputBox);
 
 function checkHandler() {
 
-  let year = input.value;
-  if (year.length === 4) {
+  if (input.value.length === 4) {
+    let year = input.value;
     if (year % 400 === 0) {
       outputBox.innerText = `Yeyyy!💥 ${year} is a leap year, You born in leap year🚀`;
-      outputBox.style.color = "green";
+      outputBox.style.color = "#00ff5d";
     }
     else if (year % 4 === 0) {
       outputBox.innerText = `Yeyyy!💥 ${year} is a leap year, You born in leap year🚀`;
-      outputBox.style.color = "green"
+      outputBox.style.color = "#00ff5d"
     }
     else if (year % 100 === 0) {
       outputBox.innerText = `ohhh😟 ${year} is not a leap year`;
-      outputBox.style.color = "black";
+      outputBox.style.color = "#e11d48";
     }
 
     else {
       outputBox.innerText = `ohhh😟 ${year} is not a leap year`;
-      outputBox.style.color = "black";
+      outputBox.style.color = "#e11d48";
     }
   }
   else {
-    outputBox.innerText = `${year} is not a valid year. Plzz Enter Valid year to check.`;
     outputBox.style.color = "red"
+    outputBox.innerText = `You entered Unvalid year. Plzz Enter Valid year to check.`;
   }
 
 
