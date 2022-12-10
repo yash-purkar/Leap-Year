@@ -17,13 +17,13 @@ function checkHandler() {
       outputBox.style.color = "#00ff5d"
     }
     else if (year % 100 === 0) {
-      outputBox.innerText = `ohhh😟 ${year} is not a leap year`;
-      outputBox.style.color = "#e11d48";
+      outputBox.innerText = `ohhh!😟 ${year} is not a leap year☹`;
+      outputBox.style.color = "#fda4af";
     }
 
     else {
       outputBox.innerText = `ohhh😟 ${year} is not a leap year`;
-      outputBox.style.color = "#e11d48";
+      outputBox.style.color = "#fda4af";
     }
   }
   else {
